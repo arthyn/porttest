@@ -1,0 +1,39 @@
+{
+  "name": "taishotest",
+  "productName": "taishotest",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arthyn/taishotest.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Hunter Miller",
+    "email": "hunter@hmiller.dev"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": "./forge.config.js"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^2.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.55",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.55",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.55",
+    "@electron-forge/maker-zip": "^6.0.0-beta.55",
+    "dotenv": "^10.0.0",
+    "electron": "12.0.9"
+  }
+}
