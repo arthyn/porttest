@@ -2,7 +2,7 @@ require('dotenv').config()
 
 module.exports = {
   packagerConfig: {
-    appBundleId: 'dev.hmiller.taishotest',
+    appBundleId: 'porttest',
     osxSign: {
       identity: 'Developer ID Application: Hunter Miller (8YA38DLJ3T)',
       "entitlements": "entitlements.plist",
@@ -21,13 +21,13 @@ module.exports = {
     {
       name: "@electron-forge/maker-squirrel",
       config: {
-        name: "taishotest"
+        name: "porttest"
       }
     },
     {
       name: '@electron-forge/maker-dmg',
       config: {
-        name: "taishotest"
+        name: "porttest"
       }
     },
     {
@@ -43,7 +43,7 @@ module.exports = {
       config: {
         repository: {
           owner: 'arthyn',
-          name: 'taishotest'
+          name: 'porttest'
         },
         draft: true
       }
